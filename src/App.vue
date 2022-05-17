@@ -1,17 +1,26 @@
 <template>
   <div id="app">
+    <div>
+    <h1>{{ usr_name }}</h1>
+    <span>{{ role }}</span>
+  </div>
+  <p>
+    {{ msg }} <b>{{ org }}</b>
+  </p>
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  // component options
+  data(){
+    return{
+      usr_name:'Bharath',
+      role:'Trainee Software Engineer',
+      org:'RecruitCRM',
+      msg:"Hope you are doing good at ",
+    }
   }
 }
 </script>
